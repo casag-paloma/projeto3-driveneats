@@ -131,13 +131,15 @@ p{
     text-align: center;
     color: #ffffff;
 
-
 }
 
 .selecionado{
     box-shadow: inset 0 0 4px 4px #32B72F;
 }
 
+.selecionado > ion-icon{
+    display: flex;
+}
 .escondido{
     display: none;
 }
