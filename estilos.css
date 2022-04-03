@@ -119,13 +119,11 @@ p{
 }
 
 .bottom button{
-    background-color: #cbcbcb;
     width: 364px;
     height: 61px;
     border-radius: 50px;
     padding: 0 70px;
 
-    font-weight: 400;
     font-size: 20px;
     line-height: 23px;
     text-align: center;
@@ -133,17 +131,24 @@ p{
 
 }
 
+.botao-desabilitado{
+    background-color: #cbcbcb;
+    font-weight: 400;
+}
+
+.botao-habilitado{
+    background-color: #32B72F;
+    font-weight: 700;
+}
+
 .selecionado{
     box-shadow: inset 0 0 4px 4px #32B72F;
 }
 
-.selecionado > ion-icon{
+.selecionado ion-icon{
     display: flex;
 }
+
 .escondido{
     display: none;
-}
-
-.botao-selecionado{
-    background-color: aqua;
 }

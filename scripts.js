@@ -5,36 +5,50 @@ let bebida;
 let sobremesa;
 
 
-function selecionarPrato(prato) {
+function selecionarPrato(elemento) {
     
     const botaoSelecionado = document.querySelector(".selecionado");
-    console.log(botaoSelecionado);
 
     if(botaoSelecionado !== null){
         botaoSelecionado.classList.remove("selecionado");
     } 
-     prato.classList.add("selecionado");
+     elemento.classList.add("selecionado");
+     prato = elemento;
+
+    
 }
 
-function selecionarBebida(bebida) {
+function selecionarBebida(elemento) {
     
     const botaoSelecionado = document.querySelector(".bebidas").querySelector(".selecionado");
-    console.log(botaoSelecionado);
 
     if(botaoSelecionado !== null){
         botaoSelecionado.classList.remove("selecionado");
     } 
-     bebida.classList.add("selecionado");
+     elemento.classList.add("selecionado");
+     bebida = elemento;
+
 }
 
-function selecionarSobremesa(sobremesa) {
+function selecionarSobremesa(elemento) {
     
     const botaoSelecionado = document.querySelector(".sobremesa").querySelector(".selecionado");
-    console.log(botaoSelecionado);
 
     if(botaoSelecionado !== null){
         botaoSelecionado.classList.remove("selecionado");
     } 
-     sobremesa.classList.add("selecionado");
+     elemento.classList.add("selecionado");
+     sobremesa = elemento;
+
 }
 
+function habilitarBotao(){
+    
+    if(prato && bebida && sobremesa){
+        let botaodes = document.querySelector(".botao-desabilitado");
+        botaodes.classList.add("escondido");
+        let botaohab = document.querySelector(".botao-habilitado");
+        botaohab.classList.remove("escondido");
+    }
+    
+}
