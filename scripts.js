@@ -23,8 +23,7 @@ function selecionarPrato(elemento) {
     precopratoesc = document.querySelector(".selecionado").querySelector(".preco");
     precopratoesc = precopratoesc.innerHTML.replace(",",".");
     precopratoesc = Number(precopratoesc);
-    console.log(precopratoesc);
-    
+    console.log(precopratoesc); 
 }
 
 function selecionarBebida(elemento) {
@@ -43,8 +42,6 @@ function selecionarBebida(elemento) {
     precobebidaesc = precobebidaesc.innerHTML.replace(",",".");
     precobebidaesc = Number(precobebidaesc);
     console.log(precobebidaesc);
-
-
 }
 
 function selecionarSobremesa(elemento) {
@@ -63,7 +60,6 @@ function selecionarSobremesa(elemento) {
     precosobremesaesc = precosobremesaesc.innerHTML.replace(",",".");
     precosobremesaesc = Number(precosobremesaesc);
     console.log(precosobremesaesc);
-
 }
 
 function habilitarBotao(){
@@ -87,5 +83,4 @@ function habilitarBotao(){
     console.log(encoded);
     console.log(`https://wa.me/5521983754188?text=${encoded}`);
     wpp.setAttribute("href", pedido);
-
 }
